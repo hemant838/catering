@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+<div class="row text-center p-3">
+<div class="col-md-12 p-3">
+<h6>CATERING</h6>
+<h1><b>Menu</b></h1>
+</div>
+</div>
+
+<div class="table /
+row">
+
+{% for pro in object_list %}
+<div class="col-md-3">
+<img src="/media/{{ pro.pic }}" height="300" width="100%" />
+<h3>{{ pro.name }}</h3>
+</div>
+{%endfor %}
+
+</div>
+<div class="datatable row" style="margin: 30px; padding: 30px 15px;">
+<table style="width:100%">
+    <tr>
+      <th style="text-align: center; vertical-align: middle; font-size: 1.4rem; background-color: black; color: white;">Sr. No.</th>
+      <th style="text-align: center; vertical-align: middle; font-size: 1.4rem; background-color: black; color: white;">Dish/Food</th>
+      <th style="text-align: center; vertical-align: middle; font-size: 1.4rem; background-color: black; color: white;">Price [per plate]</th>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>Crispy Corn</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Veg Spring Rolls</td>
+      <td>150</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Crispy Veg</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Tandoori Momos</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Corn Pizza</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>Double Cheesy pizza</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td>Creamy Pasta Pizza</td>
+        <td>149</td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td>Onion Pizza</td>
+        <td>149</td>
+      </tr>
+      <tr>
+        <td>9.</td>
+        <td>Pasta</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td>French Fries</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td>Aloo Parantha</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td>Crispy Burger</td>
+        <td>59</td>
+      </tr>
+      <tr>
+        <td>13.</td>
+        <td>Baby Corn 65</td>
+        <td>229</td>
+      </tr>
+      <tr>
+        <td>14.</td>
+        <td>Paneer Tikka</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>15.</td>
+        <td>Paneer Crunchy Roll</td>
+        <td>229</td>
+      </tr>
+      <tr>
+        <td>16.</td>
+        <td>Mineral Water</td>
+        <td>MRP</td>
+      </tr>
+      <tr>
+        <td>17.</td>
+        <td>Soft Drink Can</td>
+        <td>MRP</td>
+      </tr>
+      <tr>
+        <td>18.</td>
+        <td>Chocolate Shake</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>19.</td>
+        <td>Chaach</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <td>20.</td>
+        <td>Cold Coffee</td>
+        <td>79</td>
+      </tr>
+  </table>
+</div>
+<!--<div class="row p-5">
+
+<div class="col-md-3 ">
+<img src="{% static 'img/a6.jpg' %}" height="300" width="100%" />
+<h4>CANAPES</h4>
+</div>
+
+<div class="col-md-3">
+<img src="{% static 'img/a7.jpg' %}" height="300" width="100%" />
+<h4 style="font-family:verdana;">SMALL PLATES</h4>
+</div>
+
+<div class="col-md-3">
+<img src="{% static 'img/a8.jpg' %}" height="300" width="100%" />
+<h4 style="font-family:verdana;">SWEETS</h4>
+</div>
+
+<div class="col-md-3">
+<img src="{% static 'img/a9.jpg' %}" height="300" width="100%" />
+<h4 style="font-family:verdana;">DRINKS</h4>
+</div>
+</div>-->
+
+<div class="row text-center p-3">
+<div class="col-md-12 p-3">
+<h5>and much more sensational food & drinks...</h5>
+</div>
+</div>
+
+
+{% endblock %}

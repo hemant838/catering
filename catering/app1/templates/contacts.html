@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div class="row bg-light text-dark text-center p-3">
+
+<div class="col-md-12 p-5">
+<h2 style="text-decoration: underline;"><b>CONTACT US</b></h2><br>
+<h1><b> - Leave a Feedback or Ask a Question - </b></h1>
+</div>
+</div>
+<div class="bg1 row">
+<div class=" col-md-6 offset-1 p-3">
+<form action="/insertform/" method="post">
+{% csrf_token %}
+
+
+
+<div class="form-group">
+<label for="name">Name</label>
+<input type="name" class="form-control" name="name" placeholder="Enter name" />
+</div>
+
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" class="form-control" name="email" placeholder="Enter email" />
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<input type="message" class="form-control" name="message" placeholder="Enter message" />
+</div>
+
+<div class="form group">
+<label for="accept">I agree that my submitted data is being collected and stored.</label>
+<input type="checkbox" />
+</div>
+
+<div class="form-group">
+<input value="SEND MESSAGE" type="submit" class="btn btn-success">
+</div>
+
+</form>
+</div>
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,135 @@
+/*#product{ color:black; background:black; padding:5px 35px 5px 35px;}
+#nav a{ color:black;}
+#nav{ background:green;} 
+#nav{ background:url('image/a1.jpg);} padding-top:50px; padding-bottom:50px;}
+#nav{ background:url('image/a2.jpg);} padding-top:300px; padding-bottom:500px;}
+*/
+banner{ background:url('img/1.jpg'); padding:200px; background-size:cover; color:white;}
+
+.navbar-nav{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+#nav{
+	margin-bottom: 10px;
+}
+.nav-link{
+	margin: 5px 15px;
+	padding: auto;
+	
+}
+.nav-item a{
+	font-size: 1.2rem;
+}
+
+#product{ color:black; background:green; padding:10px 20px 10px 20px;}
+#nav a{ color:black;}
+#nav{ background:green;}
+#about{ background:url('img/1.jpg'); padding:200px; background-size:cover; color:white;} 
+#book{ background:url('img/a15.jpg'); padding:200px; background-size:cover; color:white;}  
+
+.mycls{
+	color:blue;
+	text-decoration:underline;
+	font-size:33px;
+	
+}
+
+.match{ color:green; text-decoration:underline;}
+.unmatch{ color:red; font-style:italic;}
+
+#demo img{ height:480px; width:100%;}
+
+.parts{ background:white; padding:10px; border-radius:20px
+box-shadow:5px 5px 5px 5px black;}
+#services h5{ line-height:50px;}
+
+.contact1{
+	background-color: black;
+}
+
+.navbar-nav li a:hover{
+	font-size: 1.3rem;
+	border: 2px solid black;
+	border-radius: 8px;
+	color: white;
+}
+
+#nav a:hover{
+	color: white;
+}
+.navibar{
+	position: sticky;	
+	top: 0;
+	left: 0;
+	z-index: 100;
+	/* width: 100%; */
+
+	
+}
+.catimages img{
+	 border-radius: 23px;
+	 margin-bottom:20px ;
+	 transition: all 1s ease-in-out 0s;
+}
+
+.catimages img:hover{
+	transform: scale(1.1);
+}
+
+.catimages h4{
+	font-family: cursive;
+}
+
+a> .btn{
+	transition: all 1s ease-in-out 0s;
+
+}
+a> .btn:hover{
+	transform: skew(10deg);
+	transform: translateX(20px);
+}
+.bg{
+	background-image: url("../static/img/bg3.jpg");
+}
+.bg1{
+	background-image: url("../static/img/contact2.jpg"  );
+	background-repeat: no-repeat ;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.form-group{
+	display: flex;
+	padding: 20px;
+	margin: 10px;
+	color: white;
+	font-style: bold;
+}
+.form-group input{
+	margin-left: 30px;
+	border-radius: 5px;
+	width: 300px;
+	
+}
+.bg3{
+	background-image: url(../static/img/booking2.jpg);
+
+}
+
+.datatable table tr td{
+	font-size: 1.2rem;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	background-color: grey;
+	color: white;
+}
+
+.portfolioimgs img{
+	margin: 10px 30px;
+	padding: 10px;
+}
